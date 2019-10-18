@@ -1,5 +1,8 @@
 require 'pry'
 
 def my_all?(collection)
-  collection.each {|item| yield(item[i])}
+  idx = 0
+  while idx <= collection.length do |item| 
+    yield(item[i])
+  end
 end
