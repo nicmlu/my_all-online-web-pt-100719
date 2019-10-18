@@ -5,7 +5,7 @@ def my_all?(collection)
   while idx < collection.length  
     yield(collection[i])
     idx += 1 
+    binding.pry
   end
 end
 
-my_all?([1,2,3]) {|i| i < 2}
